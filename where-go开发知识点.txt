@@ -1,0 +1,10 @@
+1.app.vue是根组件
+2.index.js是根路由
+3.el是挂载点
+4.显示各个单文件组件内容需要在index.,js引入相关文件
+5./根目录
+6.reset.css文件 网页统一初始化效果
+7.路由就是根据网址的不同，返回不同的内容给用户。
+8.@符号指的是src目录
+9.script里面写逻辑 export default导出一个对象 name后面是对象或者组件名称
+10.router-link跟a标签类似 to跟href相似 
