@@ -1,0 +1,20 @@
+                            git的初级使用方法
+                            使用git同步创建一个仓库
+1.git上面创建一个仓库
+2.使用git clone +复制仓库公钥ssh地址
+3.成功克隆git仓库到本地
+4.打开cmd命令 cd切换到仓库当前文件夹
+5.开始安装项目
+                          使本地仓库和线上仓库代码同步
+ 1.git status 查看已有文件状态
+ 2.git add .  先把文件增加到git本地缓存区
+ 3.git commit -m 'project init'
+ git commit意思就是把缓冲区的内容提交到本地仓库中
+ -m 是预留信息
+'project init'  项目初始化
+ 4.git push  把本地代码推送到线上仓库
+
+
+ git push命令用于将本地分支的更新，推送到远程主机。它的格式与git pull命令相似。
+
+$ git push <远程主机名> <本地分支名>:<远程分支名>

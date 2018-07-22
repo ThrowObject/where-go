@@ -1,13 +1,19 @@
 <template>
 <div>
-	hello world
+	<home-header></home-header>
 </div>
 </template>
 <script>
-//script里面写逻辑 export default导出一个对象 name：对象名称
+	//导入组件
+	import HomeHeader from'@/pages/home/components/Header'
 	export default{
-		name:'Home'
+		name:'Home',
+		// 导入组件后声明组件
+		components:{
+		HomeHeader
 	}
+	}
+	
 </script>
 <style >
 	
