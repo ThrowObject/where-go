@@ -4,6 +4,7 @@
 4.显示各个单文件组件内容需要在index.,js引入相关文件
 5./根目录
 6.reset.css文件 网页统一初始化效果
+001.1rem=html font-size =50px
 7.路由就是根据网址的不同，返回不同的内容给用户。
 8.@符号指的是src目录
 9.script里面写逻辑 export default导出一个对象 name后面是对象或者组件名称
@@ -11,8 +12,18 @@
 11.安装stylus css样式
 npm insatll stylus --save 
 npm insatll stylus-loader --save 
-12.
+
+
+关于在git上合作开发的一些教程
+
+1、git添加项目成员：https://www.jianshu.com/p/0f23e290e874
+2、git创建分支并提交代码到分支：https://www.jianshu.com/p/4fe6dcdea2f5
+3、git合并分支代码：https://www.jianshu.com/p/df89b64692e9
+0
 
                    关于大组件和各个小组件之间在页面渲染的关系
 大组件包含小组件 使用小组件在大组件中import进入即可
 大组件需要渲染在页面 必须在router下面的index.js入口文件修改成大组件为渲染入口
+
+                    关于路径问题
+./是当前目录 /是根目录 ../是父级目录  例如C:\是父目录，C:\Windows就是C:\的子目录。
