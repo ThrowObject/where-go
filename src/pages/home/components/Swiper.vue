@@ -48,8 +48,8 @@
   	background:#fff !important
 .wrapper
 	width:100%
-	height:0
-	padding-bottom:27.3%
+	height:178.72px
+	
 	background:#fff
 	.swiper-img
 		width:100%
