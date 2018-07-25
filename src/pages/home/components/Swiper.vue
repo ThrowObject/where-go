@@ -1,8 +1,8 @@
 <template>
 	<div class="wrapper">
-	 <swiper :options="swiperOption">
+	 <swiper :options="swiperOption " v-if="showSwiper">
 	 	<!-- v-for遍历swiperList做循环 循环每一项展示一个图片 循环里面最好有个key值 -->
-    <swiper-slide v-for="item of swiperList" :key="item.id">
+    <swiper-slide v-for="item of list" :key="item.id">
     	<!-- 图片地址 绑定内容img.Url -->
     <img class="swiper-img" :src="item.imgUrl"/>
     </swiper-slide>
@@ -14,6 +14,9 @@
 	//导出这个组件 给这个组件起个名字HomeSwiper
 	export default{
 		name:'HomeSwrper',
+		props:{
+			list:Array
+		},
 		data(){
 	      return{
 	      	swiperOption:{
@@ -27,18 +30,14 @@
         //     stopOnLastSlide:false,
         //     disableOnInteraction:true,
         //     }
-	      	},
-	      	swiperList:[{
-	      		id:'0001',
-	      		imgUrl:'http://img1.qunarzz.com/piao/fusion/1805/a9/21ee6215ad2cd402.jpg_890x330_6ed4ff05.jpg'
-	      	},{
-	      		id:'0002',
-	      		imgUrl:'http://img1.qunarzz.com/piao/fusion/1806/c7/ab25030019e67a02.jpg_890x330_0ebfc81f.jpg'
-	      	},{
-	      		id:'003',
-	      		imgUrl:'http://img1.qunarzz.com/piao/fusion/1805/ae/141a46f018aef002.jpg_890x330_dbaeeb01.jpg'
-	      	}]
+	      	}
 	      }
+		},
+		//computed 计算属性 让在获取ajax数据时 图片能够按顺序浏览
+		computed:{
+			showSwiper(){
+				return this.list.length
+			}
 		}
 	}
 </script>

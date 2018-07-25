@@ -4,14 +4,17 @@
 	<div class="iconfont back-icon" >&#xe624;</div>
 </div>
 <div class="header-input"><span class="iconfont">&#xe615;</span>请输入城市/主题/景点</div>
-<div class="header-right"><span class="iconfont  arrow-icon">城市&#xe64a;</span></div>
+<div class="header-right">{{this.city}}<span class="iconfont  arrow-icon">&#xe64a;</span></div>
 
 </div>
 </template>
 <script>
 	export default{
-		name:'HomeHeader'
+	name:'HomeHeader',
+	props:{
+		city:String
 	}
+}
 </script>
 <style lang="stylus" scoped>
 @import'~styles/varibles.styl'
