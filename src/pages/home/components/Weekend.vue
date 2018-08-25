@@ -3,7 +3,7 @@
    <div class="title">周末去哪儿</div>
    <ul>
    	<!-- 循环  recommendList  的img title desc-->
-		<li class="item border-bottom" v-for="item of recommendList" key="item.id">	
+		<li class="item border-bottom" v-for="item of recommendList">	
 			<div class="item-img-wrapper">
 		   <img class="item-img" :src="item.imgUrl">
 		</div>

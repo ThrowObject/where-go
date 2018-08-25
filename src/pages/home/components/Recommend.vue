@@ -3,7 +3,7 @@
    <div class="title">热销推荐</div>
    <ul>
    	<!-- 循环  recommendList  的img title desc-->
-		<li class="item border-bottom" v-for="item of recommendList" key="item.id">	
+		<li class="item border-bottom" v-for="item of recommendList">	
 		   <img class="item-img" :src="item.imgUrl">
 	<div class="item-info">
 		<p class="item-title">{{item.title}}</p>
