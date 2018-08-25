@@ -17,7 +17,7 @@
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
 .list
-	// flex垂直居中
+	// flex垂直居中 flex盒子布局
 	display: flex
 	flex-direction: column
 	justify-content: center
