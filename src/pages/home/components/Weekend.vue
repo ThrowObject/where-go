@@ -45,6 +45,7 @@
 		margin-top:.2rem
 		line-height:.8rem
 		background:#eee
+		// 文字缩进
 		text-indent:.2rem
 	.item-img-wrapper
 		overflow:hidden

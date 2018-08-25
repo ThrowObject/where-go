@@ -71,5 +71,6 @@
 		margin-top:.2rem
 		background:#ff9300
 		padding:0 .1rem
+		// border-radius是css3属性,他可以使div的角进行一定程度的弯曲。
 		border-radius: .06rem
 </style>

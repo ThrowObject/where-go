@@ -4,8 +4,8 @@
 	<div class="iconfont back-icon" >&#xe624;</div>
 </div>
 <div class="header-input"><span class="iconfont">&#xe615;</span>请输入城市/主题/景点</div>
-<div class="header-right">{{this.city}}<span class="iconfont  arrow-icon">&#xe64a;</span></div>
-
+<router-link to='/city'><div class="header-right">{{this.city}}<span class="iconfont  arrow-icon">&#xe64a;</span></div></router-link>
+<!-- 点击header-right时使用 router-link做页面跳转 router-link是vue里面帮助我们做页面跳转的内设组件 to属性就是点击时候所跳转的页面-->
 </div>
 </template>
 <script>
@@ -46,6 +46,7 @@
  		width:1.24rem
  		float:right
  		text-align:center
+ 		color:#fff
  		.arrow-icon
  			font-size:.24rem
 	
