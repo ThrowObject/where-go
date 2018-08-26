@@ -2,8 +2,12 @@
 	<div>
 	<city-header></city-header>
 	<city-search></city-search>
-	<city-list :cities="cities" :hot="hotCities"></city-list>
-	<city-alphabet :cities="cities"></city-alphabet>
+	<city-list 
+	:cities="cities" 
+	:hot="hotCities"
+	:letter="letter"></city-list>
+	<city-alphabet :cities="cities"
+	@change="handleLetterChange"></city-alphabet>
 </div>
 </template>
 <script>
@@ -24,7 +28,8 @@
 			return {
 				cities: {},
 				// 热门城市
-				hotCities: []
+				hotCities: [],
+				letter: ''
 			}
 		},
 		// method定义getCityInfo方法
@@ -40,6 +45,9 @@
 				this.cities = data.cities
 				this.hotCities = data.hotCities
 			  }
+			},
+			handleLetterChange (letter) {
+				this.letter = letter
 			}
 		},
 		// 使用ajax请求模拟数据，需要写一个生命周期  created或者mounted
